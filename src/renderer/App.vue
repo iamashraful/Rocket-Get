@@ -1,15 +1,23 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
-  </div>
+    <div id="app">
+        <side-navbar/>
+        <top-navbar/>
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
-  export default {
-    name: 'rocket-get'
-  }
+    import TopNavbar from "./views/TopNavbar";
+    import SideNavbar from "./views/SideNavbar";
+
+    export default {
+        name: 'rocket-get',
+        components: {SideNavbar, TopNavbar}
+    }
 </script>
 
-<style>
-  /* CSS */
+<style lang="scss">
+    #app {
+        margin-top: -20px !important;
+    }
 </style>
