@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import LandingPage from '@/views/LandingPage'
 import DownloadingView from '@/views/DownloadingView'
 import QueuedView from '@/views/QueuedView'
 import FinishedView from '@/views/FinishedView'
@@ -11,11 +10,6 @@ export default new Router({
     routes: [
         {
             path: '',
-            name: 'LandingPage',
-            component: LandingPage
-        },
-        {
-            path: '/downloading',
             name: 'DownloadingView',
             component: DownloadingView
         },
@@ -31,7 +25,7 @@ export default new Router({
         },
         {
             path: '*',
-            redirect: '/downloading'
+            redirect: '/'
         }
     ]
 })

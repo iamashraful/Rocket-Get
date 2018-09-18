@@ -17,7 +17,7 @@
     "postinstall": ""
   },
   "build": {
-    "productName": "rocket-get",
+    "productName": "RocketGET",
     "appId": "com.mrrobin.rocketget",
     "directories": {
       "output": "build"

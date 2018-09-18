@@ -4,7 +4,7 @@
             <img src="/static/logo.png" width="75" alt="RocketGET Logo"/>
         </div>
         <div class="inline-link">
-            <router-link to="/downloading">Downloading</router-link>
+            <router-link to="/">Downloading</router-link>
             <router-link to="/finished">Finished</router-link>
             <router-link to="/queued">Queued</router-link>
         </div>
@@ -18,7 +18,7 @@
 </script>
 
 <style scoped>
-    .router-link-active {
+    .router-link-exact-active {
         color: #fff!important;
     }
     .sidenav {
