@@ -4,9 +4,9 @@
             <img src="/static/logo.png" width="75" alt="RocketGET Logo"/>
         </div>
         <div class="inline-link">
-            <a>Processing</a>
-            <a>Finished</a>
-            <a>Queued</a>
+            <router-link to="/downloading">Downloading</router-link>
+            <router-link to="/finished">Finished</router-link>
+            <router-link to="/queued">Queued</router-link>
         </div>
     </div>
 </template>
@@ -18,6 +18,9 @@
 </script>
 
 <style scoped>
+    .router-link-active {
+        color: #fff!important;
+    }
     .sidenav {
         height: 100%;
         width: 156px;

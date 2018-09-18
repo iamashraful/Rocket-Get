@@ -2,7 +2,7 @@
     <div id="app">
         <side-navbar/>
         <top-navbar/>
-        <router-view></router-view>
+        <router-view style="margin-left: 157px"></router-view>
     </div>
 </template>
 
